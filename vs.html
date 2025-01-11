@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-bar input {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar button:last-of-type {
+            background-color: aquamarine;
+            color: #333;
+        }
+        .main-text {
+            text-align: center;
+            font-size: 2rem;
+            margin: 40px 0;
+            color: #333;
+        }
+        .action-buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .action-buttons button {
+            padding: 15px 30px;
+            margin: 0 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .action-buttons .primary {
+            background-color: blue;
+            color: #fff;
+        }
+        .action-buttons .secondary {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #333;
+        }
+        .image-center {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            gap: 20px;
+        }
+        .feature-item {
+            width: 300px;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="C:\Users\dell7\OneDrive\Desktop\img.png" alt="VS Code Logo">
+            <h1>VS Code</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Extensions</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Docs">
+            <button>Download</button>
+            <button id="theme-toggle" onclick="toggleTheme()">LIGHT</button>
+        </div>
+    </div>
+</header>
+<main>
+    <p class="main-text">Your Code Editor.<br>Refined With AI</p>
+    <div class="action-buttons">
+        <button onclick="https://code.visualstudio.com/docs/?dv=win64user" class="primary">Download for Windows</button>
+        <button class="secondary">Get Copilot Free</button>
+    </div>
+    <img src="C:\Users\dell7\OneDrive\Desktop\pre.jpg" alt="VS Code Preview" class="image-center">
+    <div class="features">
+        <div class="feature-item">Choose the model that works for you.<br>Pick the model that works best for your project and team, including GPT-4 and Claude Sonnet.</div>
+        <div class="feature-item">An expert on your codebase.<br>Copilot locally indexes your codebase to understand what’s relevant and supplements that context to interactions with Copilot.</div>
+        <div class="feature-item">Personalized to your needs.<br>Copilot works the way you do. Customize Copilot's prompts with details about your team's workflows, tools, and projects.</div>
+    </div>
+</main>
+<script>
+    function toggleTheme() {
+        const button = document.getElementById("theme-toggle");
+        const body = document.body;
+
+        if (body.style.backgroundColor === "black") {
+            body.style.backgroundColor = "white";
+            body.style.color = "#333";
+            button.textContent = "LIGHT";
+        } else {
+            body.style.backgroundColor = "black";
+            body.style.color = "#fff";
+            button.textContent = "DARK";
+        }
+    }
+</script>
+</body>
+</html>
